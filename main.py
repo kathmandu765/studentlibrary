@@ -1,3 +1,5 @@
+#STUDENT LIBRARY
+
 class Library:
     def __init__(self, listOfBooks):
         self.books = listOfBooks
@@ -25,17 +27,17 @@ class Student:
         self.book = input("Enter the name of the book you want to borrow: ")
         return self.book
 
-    def returnBook(self)
+    def returnBook(self):
         self.book = input("Enter the name of the book you want to return: ")
-      
+        return self.book
          
 
 if __name__ == "__main__":
     centraLibrary = Library(["Algorithms", "Django", "Clrs", "Python Notes"])
     student = Student()
-    
+    # centraLibrary.displayAvailableBooks()
     while(True):
-        welcomeMsg = '''\n ==== Welcome to Central Library ======
+        welcomeMsg = '''\n ====== Welcome to Central Library ======
         Please choose an option:
         1. List all the books
         2. Request a book
@@ -51,7 +53,7 @@ if __name__ == "__main__":
         elif a == 3:
             centraLibrary.returnBook(student.returnBook())
         elif a == 4:
-            print("Thanks for choosing Cenl Library. Have a great day ahead!")
+            print("Thanks for choosing Central Library. Have a great day ahead!")
             exit()
         else:
             print("Invalid Choice!")
